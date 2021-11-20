@@ -3,6 +3,8 @@ header {
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 
+
+
     @media screen and (max-width: 768px) {
         padding-top: 26px;
         padding-bottom: 26px;
@@ -18,7 +20,7 @@ header {
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
@@ -31,8 +33,14 @@ header {
     display: flex;
     margin-left: auto;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
 
@@ -41,12 +49,25 @@ header {
 
     &:not(:last-child) {
         margin-right: 50px;
+        
     }
 
     &:hover, 
     &:focus {
         color: var(--logo-text-color);
     }
+    
+}
+
+.header__contact-item {
+
+    @media (min-width: 768px) and (max-width: 1199px)  {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+    
 }
 
 
@@ -56,8 +77,10 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between
-    // position: relative;
+    justify-content: space-between;
+    position: relative;
+
+    
 }
 
 
@@ -137,7 +160,7 @@ header {
 }
 
 .menu-button {
-    position: absolute;
+    // position: absolute;
     align-items: center;
     justify-content: center;
     top: 10px;
@@ -147,7 +170,6 @@ header {
     height: 40px;
     cursor: pointer;
     display: inline-flex;
-    margin: 0;
     padding: 0;
     border: none;
     line-height: 0 ;
@@ -305,5 +327,5 @@ header {
 
 //     &:not(:last-child) {
 //         margin-right: 10px;
-//     }
+//     } 
 }

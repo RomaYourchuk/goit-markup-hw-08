@@ -8,6 +8,8 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 li {
@@ -17,4 +19,8 @@ li {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-title-color);
+    
+    // @media screen and (min-width: 320px) {
+    //     overflow-x: hidden;
+    //   }
 }
