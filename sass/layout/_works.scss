@@ -1,0 +1,49 @@
+.work-section {
+    @media (max-width: 767px) {
+        display: none;
+    }
+    
+}
+
+.works {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    
+    text-align: center;
+}
+
+.about-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.about-item-wrap {
+    position: relative;
+}
+
+
+.about-item-text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 224px;
+    color: #fff;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
