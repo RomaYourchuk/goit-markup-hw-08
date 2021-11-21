@@ -20,7 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-title-color);
     
-    // @media screen and (min-width: 320px) {
-    //     overflow-x: hidden;
-    //   }
+    @media screen and (min-width: 320px) {
+        overflow-x: hidden;
+      }
 }

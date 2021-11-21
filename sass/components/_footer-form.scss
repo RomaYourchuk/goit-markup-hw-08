@@ -3,6 +3,11 @@
     justify-content: flex-end;
     align-content: flex-end;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        display: block;
+        width: 100%;
+        }
 }
 
 
@@ -17,6 +22,12 @@
     border-radius: 4px;
     margin-right: 12px;
     outline: none;
+
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        }
     
 }
 
