@@ -46,35 +46,40 @@
           </button>
       </div>
       <div class="menu-container" id="menu-container" data-menu>
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__item-link current" href="./index.html">Студия</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="./portfolio.html">Портфолио</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="">Контакты</a></li>
-        </ul>
-        <ul class="menu__contact-list">
-            <li class="menu__contact-item">
-            <a class="menu__contact-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li class="menu__contact-item">
-              <a class="menu__contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
+        <div class="mobile__menu-nav">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__item-link current" href="./index.html">Студия</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="">Контакты</a></li>
           </ul>
-          <ul class="menu__social-list">
-            <li class="menu__social-item">
-            <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </li>
-            <li class="menu__social-item">
-            <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </li>
-            <li class="menu__social-item">
-            <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
-            </li>
-            <li class="menu__social-item">
-            <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </li>
+      </div>
+          <div class="mobile__menu-social">
+            <ul class="menu__contact-list">
+              <li class="menu__contact-item">
+              <a class="menu__contact-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="menu__contact-item">
+                <a class="menu__contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu__social-list">
+                <li class="menu__social-item">
+                <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="menu__social-item">
+                <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="menu__social-item">
+                <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="menu__social-item">
+                <a href="" class="menu__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+          </div>
       </div>
     </header>
     <!-- Main -->
-    <!-- <main>
+    <main>
       <section class="hero">
           <div class="container">
           <h1 class="slogan">
@@ -82,7 +87,7 @@
           </h1>
           <button type="button" class="btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- Особенности -->
       <section class="section section-features">
         <h2 class="invisible-title">Особенности</h2>
@@ -146,19 +151,34 @@
             <ul class="about-list">
               <li class="about-item">
                 <div class="about-item-wrap">
-                <img src="./images/img.jpg" alt="works on the keyboard" width="370"/>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/occupation/occ-1-desktop.webp 1x, 
+                  ./images/occupation/occ-1-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/occupation/occ-1-desktop.jpg 1x, 
+                  ./images/occupation/occ-1-desktop@2x.jpg 2x">
+                  <img src="#" alt="works on the keyboard"/></picture>
                 <p class="about-item-text">Десктопные приложения</p>
               </div>
               </li>
               <li class="about-item">
                 <div class="about-item-wrap">
-                <img src="./images/img-2.jpg" alt="works on the phone" width="370"/>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-2-desktop.webp 1x, 
+                    ./images/occupation/occ-2-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-2-desktop.jpg 1x, 
+                    ./images/occupation/occ-2-desktop@2x.jpg 2x">
+                    <img src="#" alt="works on the phone"/></picture>
                 <p class="about-item-text">Мобильные приложения</p>
               </div>
               </li>
               <li class="about-item">
                 <div class="about-item-wrap">
-                <img src="./images/img-3.jpg" alt="works on the tablet" width="370"/>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-3-desktop.webp 1x, 
+                    ./images/occupation/occ-3-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-3-desktop.jpg 1x, 
+                    ./images/occupation/occ-3-desktop@2x.jpg 2x">
+                    <img src="#" alt="works on the tablet"/></picture>
                 <p class="about-item-text">Дизайнерские решения</p>
               </div>
               </li>
@@ -171,7 +191,19 @@
           <h2 class="team">Наша команда</h2>
           <ul class="team-lists">
             <li class="team-list">
-              <img src="./images/foto-igor.jpg" alt="photo_by_igor" width=""/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team-1-desktop.webp 1x, 
+                ./images/team/team-1-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team-1-desktop.jpg 1x, 
+                ./images/team/team-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-1-tablet.webp 1x, 
+                ./images/team/team-1-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team-1-tablet.jpg 1x, 
+                ./images/team/team-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/team/team-1.webp 1x, 
+                ./images/team/team-1@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="./images/team/team-1.jpg 1x, 
+                ./images/team/team-1@2x.jpg 2x"><img src="#" alt="photo_by_igor"/></picture>
               <div class="by-team-list"><h3 class="team-icon">Игорь Демьяненко</h3>
               <p lang="en" class="team-text">Product Designer</p>
               <ul class="team-social list social-list">
@@ -207,10 +239,19 @@
             </div>
             </li>
             <li class="team-list">
-              <img
-                src="./images/foto-olga.jpg"
-                alt="photo_by_olga"
-                width=""/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team-2-desktop.webp 1x, 
+                ./images/team/team-2-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team-2-desktop.jpg 1x, 
+                ./images/team/team-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-2-tablet.webp 1x, 
+                ./images/team/team-2-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team-2-tablet.jpg 1x, 
+                ./images/team/team-2-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/team/team-2.webp 1x, 
+                ./images/team/team-2@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="./images/team/team-2.jpg 1x, 
+                ./images/team/team-2@2x.jpg 2x"><img src="#" alt="photo_by_olga"/></picture>
               <div class="by-team-list"><h3 class="team-icon">Ольга Репина</h3>
               <p lang="en" class="team-text">Frontend Developer</p>
               <ul class="team-social list social-list">
@@ -246,7 +287,19 @@
             </div>
             </li>
             <li class="team-list">
-              <img src="./images/foto-nik.jpg" alt="photo_by_nik" width="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team-3-desktop.webp 1x, 
+                ./images/team/team-3-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team-3-desktop.jpg 1x, 
+                ./images/team/team-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-3-tablet.webp 1x, 
+                ./images/team/team-3-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team-3-tablet.jpg 1x, 
+                ./images/team/team-3-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/team/team-3.webp 1x, 
+                ./images/team/team-3@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="./images/team/team-3.jpg 1x, 
+                ./images/team/team-3@2x.jpg 2x"><img src="#" alt="photo_by_nik"></picture>
               <div class="by-team-list"><h3 class="team-icon">Николай Тарасов</h3>
               <p lang="en" class="team-text">Marketing</p>
               <ul class="team-social list social-list">
@@ -282,10 +335,19 @@
             </div>
             </li>
             <li class="team-list">
-              <img
-                src="./images/foto-myhail.jpg"
-                alt="photo_by_mykhail"
-                width=""/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team-4-desktop.webp 1x, 
+                ./images/team/team-4-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team-4-desktop.jpg 1x, 
+                ./images/team/team-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-4-tablet.webp 1x, 
+                ./images/team/team-4-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team-4-tablet.jpg 1x, 
+                ./images/team/team-4-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/team/team-4.webp 1x, 
+                ./images/team/team-4@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="./images/team/team-4.jpg 1x, 
+                ./images/team/team-4@2x.jpg 2x"><img src="#" alt="photo_by_mykhail"/></picture>
               <div class="by-team-list"><h3 class="team-icon">Михаил Ермаков</h3>
               <p lang="en" class="team-text">UI Designer</p>
               <ul class="team-social list social-list">
@@ -423,7 +485,7 @@
         </div>
         <!-- Подпишитесь -->
         <div class="footer-social">
-          <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
+          <h3 class="social-title-form">Подпишитесь на рассылку</h3>
           <form action="#">
             <div class="input-form">
             <input class="footer-form-input" name="email" type="email" placeholder="E-mail">
@@ -438,7 +500,7 @@
     </div>
     </footer>
     <!-- Бекдроп модалка -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-modal" data-modal-close>
           <svg class="modal-icon-close" width="11" height="11" >
@@ -484,7 +546,7 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

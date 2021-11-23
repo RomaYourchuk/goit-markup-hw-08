@@ -76,6 +76,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -126,6 +132,7 @@ body {
 }
 
 .backdrop {
+  z-index: 102;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
@@ -144,6 +151,7 @@ body {
 
 .modal {
   position: absolute;
+  z-index: 102;
   min-width: 528px;
   min-height: 581px;
   top: 50%;
@@ -152,6 +160,20 @@ body {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .btn-modal {
@@ -295,6 +317,13 @@ body {
   cursor: pointer;
   border: 2px solid #757575;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-checkbox-label {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal-form-link {
@@ -546,6 +575,12 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    width: 480px;
+  }
+}
+
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -649,19 +684,24 @@ header {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: fixed;
   z-index: 100;
-  width: 100vw;
   height: 100%;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 40px;
   width: 100%;
   top: 0px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  overflow-x: scroll;
 }
 
 .menu-container.is-open {
@@ -673,7 +713,6 @@ header {
 .menu__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
 }
 
 .menu__item:not(:last-child) {
@@ -779,19 +818,70 @@ header {
   margin: 0px;
 }
 
+@media screen and (max-width: 1199px) {
+  .slogan {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
 .hero {
   background-color: #C4C4C4;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image.jpg");
-  max-width: 1600px;
-  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/hero2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/hero-tablet2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/hero-desktop2x.jpg");
+  }
 }
 
 .btn {
@@ -901,6 +991,9 @@ header {
   .features-item:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .features-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
@@ -979,6 +1072,12 @@ header {
 
 .section-team {
   background: #F5F4FA;
+}
+
+@media screen and (max-width: 768px) {
+  .section-team {
+    min-width: 480px;
+  }
 }
 
 .team {
@@ -1073,6 +1172,19 @@ header {
   border: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .clients {
+    min-width: 480px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
 .client-list {
   display: flex;
   justify-content: center;
@@ -1080,6 +1192,12 @@ header {
   box-sizing: border-box;
   border: none;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .client-list {
+    min-width: 480px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1158,6 +1276,12 @@ footer {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    min-width: 480px;
+  }
+}
+
 .footer-address {
   margin-right: 70px;
   font-style: normal;
@@ -1179,6 +1303,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-address {
     margin-right: 0px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1285,7 +1410,29 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-title {
+    text-align: start;
+  }
+}
+
+.social-title-form {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-title-form {
+    text-align: start;
+  }
 }
 
 .footer-social-link {
@@ -1297,7 +1444,13 @@ footer {
 }
 
 .section-buttons {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-buttons {
+    padding-top: 94px;
+  }
 }
 
 .button {

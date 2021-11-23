@@ -6,6 +6,17 @@
     
     text-align: center;
     border: 4px;
+
+
+    @media screen and (max-width: 768px) {
+        min-width: 480px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 33px;
+
+    }
 }
 
 .client-list {
@@ -15,6 +26,10 @@
     box-sizing: border-box;
     border: none;
     margin-top: 50px;
+
+    @media screen and (max-width: 768px) {
+        min-width: 480px;
+    }
 
     @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
