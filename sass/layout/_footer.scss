@@ -5,6 +5,7 @@ footer {
 
     @media screen and (max-width: 768px) {
         min-width: 480px;
+        text-align: center;
     }
 
 }
@@ -17,12 +18,12 @@ footer {
     letter-spacing: 0.03em;
 
     @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         // justify-content: center;
         // align-content: center;
         // align-items: center;
-        text-align: center;
+        // text-align: center;
         margin-right: 0px;
         margin-bottom: 60px;
 
@@ -96,6 +97,7 @@ footer {
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
+        align-items: baseline;
      
     }
 

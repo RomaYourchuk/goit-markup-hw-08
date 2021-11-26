@@ -1086,6 +1086,7 @@ header {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-lists {
@@ -1093,7 +1094,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
 }
 
 @media screen and (min-width: 1199px) {
@@ -1117,18 +1117,24 @@ header {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .team-list:nth-child(2n + 1) {
-    margin-right: 0px;
-  }
-}
-
 .team-list:not(:last-child) {
   margin-right: 30px;
 }
 
 @media screen and (max-width: 767px) {
   .team-list:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .team-list:nth-child(2n) {
     margin-right: 0px;
   }
 }
@@ -1279,6 +1285,7 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     min-width: 480px;
+    text-align: center;
   }
 }
 
@@ -1292,9 +1299,6 @@ footer {
 
 @media screen and (max-width: 767px) {
   .footer-address {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     margin-right: 0px;
     margin-bottom: 60px;
   }
@@ -1358,6 +1362,7 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -1564,8 +1569,7 @@ footer {
 }
 
 .project-item {
-  flex-basis: calc(100%/3-30px);
-  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-item:nth-child(3n) {
@@ -1574,6 +1578,12 @@ footer {
 
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    margin-bottom: 0px;
+  }
 }
 
 .project-item-wrap {
